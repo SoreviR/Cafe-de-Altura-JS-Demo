@@ -123,11 +123,13 @@ faqArray.forEach((item, index) => {
   faqContainer.innerHTML += `
 <article class="faq-arcticle flex flex-col p-6 gap-4 bg-White-color w-[668px] rounded-[10px]">
     <div class="flex justify-between">
-        <h3 class="text-lg font-semibold leading-6">${item.question}</h3>
-        <button class=" cursor-pointer" type="button"><img src="../assets/icons/arrow\ down.svg"></button>
-     </div>
-     <img src="../assets/images/Divider.jpg" alt="divider" />
-    <p class="faq-answer hidden text-xs font-normal leading-4">${item.asnwer}</p>   
+      <h3 class="text-lg font-semibold leading-6">${item.question}</h3>
+      <button class=" cursor-pointer" type="button"><img src="../assets/icons/arrow\ down.svg"></button>
+    </div>
+    <div class="faq-answer flex flex-col hidden  gap-4 ">
+      <img src="../assets/images/Divider.jpg" alt="divider" />
+      <p class=" text-xs font-normal leading-4">${item.asnwer}</p>
+    </div>
 </article>
 `;
 });
