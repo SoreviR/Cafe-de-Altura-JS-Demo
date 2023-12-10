@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Cafe de Altura / Checkout</title>
+  </head>
+  <body class="font-body">
+    <!-- ------------------------------------------------- NAVBAR SECTION --------------------------------------------- -->
+    <header
+      class="bg-Dark-grey-color flex justify-center items-center py-3 px-10 h-16"
+    >
+      <nav
+        class="text-white flex justify-between w-full items-center font-semibold"
+      >
+        <figure class="flex items-center gap-2">
+          <a href="index.html"
+            ><h4 class="text-2xl font-normal">cafedealtura.com</h4></a
+          >
+          <img
+            class="w-5 h-6"
+            src="../assets/icons/ps_coffee-hot.png"
+            alt="logo icon"
+          />
+        </figure>
+
+        <ul
+          class="flex gap-4 [&>li]:px-2 [&>li]:py-2 [&>li]:rounded-xl [&>li>a]:text-sm"
+        >
+          <li class="hover:bg-[#f7f5f31a]">
+            <a class="" href="tienda.html"><button class="">Tienda</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Suscripción</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Para empresas</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Sobre nosotros</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Contacto</button></a>
+          </li>
+        </ul>
+
+        <div class="flex gap-6">
+          <a href="" class="flex items-center gap-2">
+            <img
+              class="w-6 h-6"
+              src="../assets/icons/Phone.svg"
+              alt="phone icon"
+            />
+            <p class="text-sm font-semibold">+34 919 49 05 18</p>
+          </a>
+
+          <a class="bg-Grey-color rounded text-sm font-semibold" href=""
+            ><button class="py-3 px-6">Iniciar sesión</button></a
+          >
+        </div>
+
+        <figure id="cart-bag" class="flex gap-2">
+          <a class="cart-bag-icon" href="cart.html"
+            ><img src="../assets/icons/cart-bag-icon.png" alt="cart icon"
+          /></a>
+          <p
+            class="cart-count text-xs font-normal leading-4 px-2 py-1 bg-Grey-color rounded-full hidden"
+          ></p>
+        </figure>
+      </nav>
+    </header>
+    <!-- ----------------------------------------------- MAIN SECTION -------------------------------------------------  -->
+
+    <section class="flex flex-col items-center p-10 gap-6">
+      <h2 class="text-Green-color font-medium text-2xl">Checkout</h2>
+      <div class="flex gap-6">
+        <main class="flex flex-col gap-6 w-[792px]">
+          <h3 class="font-semibold text-lg">Seleccionar método de pago</h3>
+          <div class="flex gap-4">
+            <input type="radio" name="forma-de-pago" checked />
+            <div>
+              <p class="text-sm font-semibold">Tarjeta de débito</p>
+              <p class="text-sm">Opción estándar sin seguimiento</p>
+            </div>
+            <div class="w-[55px] h-6"></div>
+          </div>
+
+          <form
+            class="flex flex-col gap-2 text-xs w-[280px] [&>label]:flex [&>label]:flex-col [&>label]:gap-[3px] [&>label>input]:px-2 [&>label>input]:py-2.5 [&>label>input]:rounded-md"
+            action=""
+          >
+            <label class="" for=""
+              >Titular
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="text"
+                placeholder="Nombre del titular"
+              />
+            </label>
+            <label class="" for=""
+              >Número de la tarjeta
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="text"
+                placeholder="1234 1234 1234 1234"
+              />
+            </label>
+            <div class="flex gap-6 w-[280px] [&>label]:gap-[3px]">
+              <label class="flex flex-col" for=""
+                >Fecha de caducidad
+                <input
+                  class="border rounded-md border-[#D1D5DB] hover:border-[#9B9EA3] px-2 py-2.5 w-[128px] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                  placeholder="MM / YY"
+                />
+              </label>
+
+              <label class="flex flex-col" for=""
+                >CVC
+                <input
+                  class="border rounded-md border-[#D1D5DB] hover:border-[#9B9EA3] px-2 py-2.5 w-[128px] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                  placeholder="123"
+                />
+              </label>
+            </div>
+          </form>
+
+          <img class="" src="../assets/images/Divider.jpg" alt="" />
+
+          <div class="flex gap-4">
+            <input type="radio" name="forma-de-pago" />
+            <div class="flex flex-col">
+              <p class="text-sm font-semibold">
+                Transferencia bancaria a la cuenta ES12 1234 1234 123457890
+              </p>
+              <p class="text-sm">
+                Será necesario recibir el comprobante de la transferencia para
+                preparar tu pedido
+              </p>
+            </div>
+          </div>
+
+          <img src="../assets/images/Divider.jpg" alt="" />
+
+          <div class="flex items-center gap-4">
+            <input type="radio" name="forma-de-pago" />
+            <p class="text-sm font-semibold">Bizum</p>
+            <img src="../assets/images/bizum icon.png" alt="" />
+          </div>
+
+          <h3 class="text-lg font-semibold">Dirección de envío</h3>
+
+          <form
+            class="flex flex-col text-xs w-[521px] gap-2 [&>label]:flex [&>label]:flex-col [&>label]:gap-[3px] [&>label>input]:px-2 [&>label>input]:py-2.5 [&>label>input]:rounded-md"
+            action=""
+          >
+            <label for=""
+              >Nombre
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="text"
+              />
+            </label>
+
+            <label for=""
+              >Apellidos
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="text"
+              />
+            </label>
+
+            <label for=""
+              >Teléfono
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="tel"
+                placeholder="+34 600 6000 600"
+              />
+            </label>
+
+            <label for=""
+              >Email
+              <input
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                type="email"
+              />
+            </label>
+
+            <label for=""
+              >País
+              <select
+                class="border border-[#D1D5DB] hover:border-[#9B9EA3] rounded-md px-2 py-2.5 focus:outline-[#3F8F6B] focus:outline-2"
+                name=""
+                id=""
+              >
+                <option value="">Seleccionar</option>
+                <option value="">Seleccion 1</option>
+              </select>
+            </label>
+
+            <div
+              class="flex gap-6 [&>label]:flex [&>label]:gap-[3px] [&>label]:flex-col [&>label>input]:px-2 [&>label>input]:py-2.5 [&>label>input]:border [&>label>input]:border-[#D1D5DB] [&>label>input]:rounded-md"
+            >
+              <label class="w-[248px]" for=""
+                >Población
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                />
+              </label>
+
+              <label class="w-[248px]" for=""
+                >CP
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                  placeholder="123"
+                />
+              </label>
+            </div>
+
+            <div
+              class="flex gap-6 w-[521px] [&>label]:flex [&>label]:gap-[3px] [&>label]:flex-col [&>label>input]:px-2 [&>label>input]:py-2.5 [&>label>input]:border [&>label>input]:border-[#D1D5DB] [&>label>input]:rounded-md"
+            >
+              <label class="w-[112px]" for=""
+                >Calle
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                />
+              </label>
+
+              <label class="w-[112px]" for=""
+                >Nº
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                />
+              </label>
+
+              <label class="w-[112px]" for=""
+                >Piso
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                />
+              </label>
+
+              <label class="w-[112px]" for=""
+                >Puerta
+                <input
+                  class="hover:border-[#9B9EA3] focus:outline-[#3F8F6B] focus:outline-2"
+                  type="text"
+                />
+              </label>
+            </div>
+          </form>
+          <!-- </div> -->
+        </main>
+
+        <!-- ------------------------------- CART TOTAL --------------------------  -->
+        <aside
+          class="bg-Off-white-color flex flex-col w-96 h-[304px] p-6 gap-4 rounded-[10px]"
+        >
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-semibold">Total del carrito</h3>
+            <img
+              src="../assets/images/Divider.jpg"
+              alt=""
+              class="divider-line-total"
+            />
+            <div class="flex justify-between">
+              <p class="text-sm">SUBTOTAL</p>
+              <p class="subtotal text-sm font-semibold"></p>
+            </div>
+
+            <div class="flex justify-between">
+              <p class="text-sm">ENVÍO</p>
+              <p class="delivery text-sm font-semibold"></p>
+            </div>
+            <img
+              src="../assets/images/Divider.jpg"
+              alt=""
+              class="divider-line-total"
+            />
+            <div class="flex justify-between">
+              <p class="text-sm font-semibold">TOTAL</p>
+              <div class="flex flex-col items-end gap-2">
+                <p class="total-price text-sm font-semibold"></p>
+                <p class="text-xs">Incluye 3,78€ de IVA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="total-buttons">
+            <a class="text-white font-semibold text-sm" href="success.html"
+              ><button class="rounded py-3 px-6 bg-Taupe-color">
+                Pagar y realizar pedido
+              </button></a
+            >
+          </div>
+        </aside>
+      </div>
+    </section>
+    <!-- -------------------------------- FOOTER ----------------------------------  -->
+    <footer class="flex justify-center bg-Dark-grey-color py-3">
+      <p class="text-sm text-white font-semibold">
+        Todos los derechos reservados - Café de Altura SL - 2022
+      </p>
+    </footer>
+    <script src="checkout.js"></script>
+  </body>
+</html>

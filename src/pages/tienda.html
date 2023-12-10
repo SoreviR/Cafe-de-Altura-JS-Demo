@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Café de Altura / Tienda</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------------- NAVBAR SECTION --------------------------------------------- -->
+    <header
+      class="bg-Dark-grey-color flex justify-center items-center py-3 px-10 h-16"
+    >
+      <nav
+        class="text-white flex justify-between w-full items-center font-semibold"
+      >
+        <figure class="flex items-center gap-2">
+          <a href="index.html"
+            ><h4 class="text-2xl font-normal">cafedealtura.com</h4></a
+          >
+          <img
+            class="w-5 h-6"
+            src="../assets/icons/ps_coffee-hot.png"
+            alt="logo icon"
+          />
+        </figure>
+
+        <ul
+          class="flex gap-4 [&>li]:px-2 [&>li]:py-2 [&>li]:rounded-xl [&>li>a]:text-sm"
+        >
+          <li class="hover:bg-[#f7f5f31a]">
+            <a class="" href="tienda.html"><button class="">Tienda</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Suscripción</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Para empresas</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Sobre nosotros</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Contacto</button></a>
+          </li>
+        </ul>
+
+        <div class="flex gap-6">
+          <a href="" class="flex items-center gap-2">
+            <img
+              class="w-6 h-6"
+              src="../assets/icons/Phone.svg"
+              alt="phone icon"
+            />
+            <p class="text-sm font-semibold">+34 919 49 05 18</p>
+          </a>
+
+          <a class="bg-Grey-color rounded text-sm font-semibold" href=""
+            ><button class="py-3 px-6">Iniciar sesión</button></a
+          >
+        </div>
+
+        <figure id="cart-bag" class="flex gap-2">
+          <a class="cart-bag-icon" href="cart.html"
+            ><img src="../assets/icons/cart-bag-icon.png" alt="cart icon"
+          /></a>
+          <p
+            class="cart-count text-xs font-normal leading-4 px-2 py-1 bg-Grey-color rounded-full hidden"
+          ></p>
+        </figure>
+      </nav>
+    </header>
+
+    <!-- ------------------------------------------------- SHOP SECTION (CARDS)--------------------------------------------- -->
+
+    <section class="flex flex-col items-center p-10 gap-6">
+      <h2 class="text-2xl font-medium leading-7 text-Green-color">
+        Ultimos origenes
+      </h2>
+
+      <div
+        id="products-container"
+        class="flex gap-6 flex-wrap w-[1200px]"
+      ></div>
+    </section>
+
+    <!-- ------------------------------------------------- CONDITIONS SECTION (CARDS)--------------------------------------------- -->
+
+    <section
+      class="flex flex-col items-center justify-center py-12 px-[147px] w-full bg-center bg-cover bg-no-repeat gap-6"
+      style="
+        background-image: url(../assets/images/condition-cards-background.jpg);
+      "
+    >
+      <h2 class="text-2xl text-center font-medium text-White-color">
+        Café con las mejores condiciones
+      </h2>
+      <div
+        class="flex justify-center text-center text-Dark-grey-color gap-6 w-[996px] h-[232px]"
+      >
+        <article
+          class="flex flex-col items-center justify-center w-[316px] h-[232px] p-6 gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="">
+            <img
+              class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]"
+              src="../assets/icons/Clipboard check.svg"
+              alt=""
+            />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6 w-[271px]">
+            Recibe tu pedido sin preocuparte
+          </h3>
+          <p class="text-sm font-normal leading-4">
+            Tienes cosas más importantes en la cabeza, por eso con nuestra
+            suscripción de café, nunca te quedarás sin tu taza de la mañana.
+          </p>
+        </article>
+
+        <article
+          class="flex flex-col p-6 items-center justify-center w-[316px] h-[232px] gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]">
+            <img src="../assets/icons/Truck.svg" alt="" />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6">Envío en 24/48h</h3>
+          <p class="text-sm font-normal leading-4">
+            Pide tu café antes de las 12h y lo recibirás al día siguiente.
+          </p>
+        </article>
+
+        <article
+          class="flex flex-col p-6 items-center justify-center w-[316px] h-[232px] gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]">
+            <img src="../assets/icons/Gift.svg" alt="" />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6">
+            Descuentos y beneficios
+          </h3>
+          <p class="text-sm font-normal leading-4">
+            Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa,
+            para que lo descubras junto a nosotros.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------- FOOTER SECTION --------------------------------------------- -->
+
+    <section class="bg-Black-color text-White-color">
+      <article class="py-7 px-8 flex flex-col gap-4">
+        <figure class="">
+          <a href="index.html" class="flex gap-2 items-center"
+            ><h4 class="text-2xl font-normal leading-9">cafedealtura.com</h4>
+            <img
+              class="w-5 h-6"
+              src="../assets/icons/ps_coffee-hot.png"
+              alt="logo icon"
+          /></a>
+        </figure>
+
+        <div class="flex justify-between w-[1132px] h-[152px]">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-semibold leading-6">Te ayudamos en</h3>
+            <a href="">
+              <button
+                class="flex gap-2 px-6 py-3 bg-Grey-color rounded items-center"
+              >
+                <img src="../assets/icons/Phone.svg" alt="phone icon" />
+                <p class="text-sm font-semibold leading-4">+34 919 49 05 18</p>
+              </button>
+            </a>
+
+            <a href="">
+              <button
+                class="flex gap-2 px-6 py-3 bg-Grey-color rounded items-center"
+              >
+                <img src="../assets/icons/Mail-white.svg" alt="mail icon" />
+                <p class="text-sm font-semibold leading-4">
+                  hola@cafedealtura.com
+                </p>
+              </button>
+            </a>
+          </div>
+
+          <ul
+            class="flex flex-col gap-4 text-sm font-semibold leading-4 ml-[120px]"
+          >
+            <li>
+              <a href="tienda.html">Tienda</a>
+            </li>
+
+            <li>
+              <a href="">Suscripción</a>
+            </li>
+
+            <li>
+              <a href="">Para empresas</a>
+            </li>
+
+            <li>
+              <a href="">Sobre nosotros</a>
+            </li>
+
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+
+          <ul class="flex flex-col gap-4 text-sm font-semibold leading-4">
+            <li>
+              <a href="">Política de privacidad</a>
+            </li>
+
+            <li>
+              <a href="">Política de cookies</a>
+            </li>
+
+            <li>
+              <a href="">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer class="flex justify-center bg-Dark-grey-color py-3">
+        <p class="text-sm text-white font-semibold">
+          Todos los derechos reservados - Café de Altura SL - 2022
+        </p>
+      </footer>
+    </section>
+    <script type="module" src="tienda.js"></script>
+  </body>
+</html>

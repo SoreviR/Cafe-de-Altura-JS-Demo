@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Cafe de Altura</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------------- NAVBAR SECTION --------------------------------------------- -->
+    <header
+      class="bg-Dark-grey-color flex justify-center items-center py-3 px-10 h-16"
+    >
+      <nav
+        class="text-white flex justify-between w-full items-center font-semibold"
+      >
+        <figure class="flex items-center gap-2">
+          <a href="index.html"
+            ><h4 class="text-2xl font-normal">cafedealtura.com</h4></a
+          >
+          <img
+            class="w-5 h-6"
+            src="../assets/icons/ps_coffee-hot.png"
+            alt="logo icon"
+          />
+        </figure>
+
+        <ul
+          class="flex gap-4 [&>li]:px-2 [&>li]:py-2 [&>li]:rounded-xl [&>li>a]:text-sm"
+        >
+          <li class="hover:bg-[#f7f5f31a]">
+            <a class="button-store" href="tienda.html"
+              ><button class="">Tienda</button></a
+            >
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Suscripción</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Para empresas</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Sobre nosotros</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Contacto</button></a>
+          </li>
+        </ul>
+
+        <div class="flex gap-6">
+          <a href="" class="flex items-center gap-2">
+            <img
+              class="w-6 h-6"
+              src="../assets/icons/Phone.svg"
+              alt="phone icon"
+            />
+            <p class="text-sm font-semibold">+34 919 49 05 18</p>
+          </a>
+
+          <a class="bg-Grey-color rounded text-sm font-semibold" href=""
+            ><button class="py-3 px-6">Iniciar sesión</button></a
+          >
+        </div>
+
+        <figure class="flex gap-2">
+          <a class="cart-bag-icon" href="cart.html"
+            ><img src="../assets/icons/cart-bag-icon.png" alt="cart icon"
+          /></a>
+          <p
+            class="cart-count text-xs font-normal leading-4 px-2 py-1 bg-Grey-color rounded-full hidden"
+          ></p>
+        </figure>
+      </nav>
+    </header>
+    <!-- ------------------------------------------------- MAIN SECTION (HERO)--------------------------------------------- -->
+
+    <section class="flex justify-center px-12 py-10 w-full">
+      <main class="flex justify-center gap-6 h-[390px]">
+        <article class="flex flex-col justify-center gap-4 w-[588px]">
+          <h3 class="text-Green-color text-lg font-semibold">
+            De la planta a tu taza
+          </h3>
+          <h1 class="text-[40px] font-semibold">
+            El mejor café del mundo, ahora en tu casa.
+          </h1>
+          <p class="text-sm">
+            Trabajamos con agricultores de todo el mundo para seleccionar los
+            mejores granos de café y que puedas viajar desde la comodidad de tu
+            hogar.
+          </p>
+          <div class="">
+            <a href="">
+              <button
+                class="bg-Black-color text-White-color text-sm font-semibold py-3 px-6 rounded"
+              >
+                Descrubrir orígenes
+              </button>
+            </a>
+            <a href="tienda.html">
+              <button
+                class="bg-Green-color text-White-color text-sm font-semibold py-3 px-6 rounded"
+              >
+                Comprar café
+              </button>
+            </a>
+          </div>
+        </article>
+        <figure>
+          <img
+            class="h-[390px]"
+            src="../assets/images/Hero image.png"
+            alt="a hand taking coffe from a tree"
+          />
+        </figure>
+      </main>
+    </section>
+
+    <!-- ------------------------------------------------- CONDITIONS SECTION (CARDS)--------------------------------------------- -->
+
+    <section
+      class="flex flex-col items-center justify-center py-12 px-[147px] w-full bg-center bg-cover bg-no-repeat gap-6"
+      style="
+        background-image: url(../assets/images/condition-cards-background.jpg);
+      "
+    >
+      <h2 class="text-2xl text-center font-medium text-White-color">
+        Café con las mejores condiciones
+      </h2>
+      <div
+        class="flex justify-center text-center text-Dark-grey-color gap-6 w-[996px] h-[232px]"
+      >
+        <article
+          class="flex flex-col items-center justify-center w-[316px] h-[232px] p-6 gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="">
+            <img
+              class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]"
+              src="../assets/icons/Clipboard check.svg"
+              alt=""
+            />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6 w-[271px]">
+            Recibe tu pedido sin preocuparte
+          </h3>
+          <p class="text-sm font-normal leading-4">
+            Tienes cosas más importantes en la cabeza, por eso con nuestra
+            suscripción de café, nunca te quedarás sin tu taza de la mañana.
+          </p>
+        </article>
+
+        <article
+          class="flex flex-col p-6 items-center justify-center w-[316px] h-[232px] gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]">
+            <img src="../assets/icons/Truck.svg" alt="" />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6">Envío en 24/48h</h3>
+          <p class="text-sm font-normal leading-4">
+            Pide tu café antes de las 12h y lo recibirás al día siguiente.
+          </p>
+        </article>
+
+        <article
+          class="flex flex-col p-6 items-center justify-center w-[316px] h-[232px] gap-4 rounded-lg shadow-md bg-White-color"
+        >
+          <figure class="w-[52px] h-[52px] bg-Green-color p-3 rounded-[20px]">
+            <img src="../assets/icons/Gift.svg" alt="" />
+          </figure>
+          <h3 class="font-semibold text-lg leading-6">
+            Descuentos y beneficios
+          </h3>
+          <p class="text-sm font-normal leading-4">
+            Cada dos meses, te regalamos una bolsa de un nuevo origen sorpresa,
+            para que lo descubras junto a nosotros.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------- NEW PEODUCTS SECTION (CARDS)--------------------------------------------- -->
+
+    <section class="flex items-center flex-col p-10 gap-10">
+      <h2 class="text-2xl font-medium leading-7 text-Green-color">Novedades</h2>
+
+      <div class="new-products-container w-[1200px] flex gap-24"></div>
+      <footer class="">
+        <a
+          href="tienda.html"
+          class="button-store flex gap-4 items-center text-sm font-semibold leading-4 underline"
+          >Ver todos
+          <img src="../assets/icons/Arrow narrow right.svg" alt="arrow"
+        /></a>
+      </footer>
+    </section>
+
+    <!-- ------------------------------------------------- FAQ SECTION --------------------------------------------- -->
+
+    <section
+      class="bg-Green-color px-[386px] py-12 flex flex-col items-center gap-6"
+    >
+      <header>
+        <h2 class="text-2xl font-medium leading-7 text-White-color">
+          Preguntas frecuentes
+        </h2>
+      </header>
+
+      <div id="faq-container" class="flex flex-col gap-4"></div>
+
+      <footer class="">
+        <a
+          class="flex gap-4 items-center underline text-White-color text-sm font-semibold leading-4"
+          href=""
+          >Resolvemos tus dudas
+          <img src="../assets/icons/Arrow narrow right white.svg" alt="arrow"
+        /></a>
+      </footer>
+      <!-- </div> -->
+    </section>
+
+    <!-- ------------------------------------------------- TASTE SECTION --------------------------------------------- -->
+
+    <section class="flex px-10 py-11 justify-center">
+      <div class="w-[1200px] flex justify-between">
+        <aside class="flex flex-col gap-4 w-[457px] justify-center">
+          <h2 class="text-2xl font-medium leading-7 text-Green-color">
+            Pruébalo en nuestro coffee shop
+          </h2>
+          <p class="text-sm font-normal leading-4">
+            Visita nuestra cafetería en el centro de la ciudad para probar los
+            granos de café antes de hacer tu pedido y llévate un descuento
+          </p>
+          <footer class="">
+            <a
+              class="flex gap-4 items-center text-sm font-semibold leading-4 underline"
+              href=""
+              >Como llegar
+              <img src="../assets/icons/Arrow narrow right.svg" alt=""
+            /></a>
+          </footer>
+        </aside>
+
+        <figure>
+          <img
+            class="w-[588px] h-[390px]"
+            src="../assets/images/Hero image taste.png"
+            alt="a restaurant picture"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------- SPLIT TWO TONES SECTION --------------------------------------------- -->
+
+    <section class="flex justify-center bg-Taupe-color">
+      <div class="flex gap-6">
+        <article
+          class="flex flex-col justify-center gap-8 text-[#6B7280] text-sm font-normal leading-4 w-[588px]"
+        >
+          <div class="flex flex-col gap-3">
+            <h3 class="text-lg font-semibold leading-6 text-[#111827]">
+              Entra en contacto con nosotros
+            </h3>
+            <p>
+              Si tienes dudas, ponte en contacto con nosotros a través del
+              formulario y te responderemos lo antes posible.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <p>
+              TAmbién puedes ponerte en contacto con nostros en nuestra
+              dirección o a través del teléfono de la tienda.
+            </p>
+
+            <div class="">
+              <p>742 Evergreen Terrace</p>
+              <p>Springfield, OR 12345</p>
+            </div>
+
+            <div class="flex gap-4 items-center">
+              <img src="../assets/icons/Phone-grey.svg" alt="" />
+              <p>+1 (555) 123-4567</p>
+            </div>
+
+            <div class="flex gap-4 items-center">
+              <img src="../assets/icons/Mail-icon.svg" alt="" />
+              <p>support@example.com</p>
+            </div>
+
+            <p>
+              ¿Buscas un trabajo?
+              <a
+                class="text-[#111827] underline text-sm font-semibold leading-4"
+                href=""
+                >Ver nuestras ofertas.</a
+              >
+            </p>
+          </div>
+        </article>
+
+        <aside class="w-[588px] p-8 pl-12 bg-White-color">
+          <form
+            class="flex flex-col gap-6 text-xs font-normal leading-4"
+            action=""
+          >
+            <div class="flex flex-col gap-1">
+              <label for="">Nombre completo</label>
+              <input
+                class="px-[9px] py-[13px] border rounded-md hover:border-[#9B9EA3] focus:outline-[#3F8F6B]"
+                type="text"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="">Email</label>
+              <input
+                class="px-[9px] py-[13px] border rounded-md hover:border-[#9B9EA3] focus:outline-[#3F8F6B]"
+                type="text"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for="">Teléfono</label>
+
+              <div
+                class="focus-within:border-[#3F8F6B] focus-within:border-[3px] hover:border-[#9B9EA3] flex px-[9px] py-[13px] border rounded-md"
+              >
+                <select class="outline-none" id="country" name="country">
+                  <option>ES</option>
+                  <option selected>US</option>
+                </select>
+
+                <input
+                  class="w-full h-13px px-[13px] outline-none"
+                  type="tel"
+                  placeholder="+1 (555) 987-6543"
+                />
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-1">
+              <label for=""> </label>
+              <textarea
+                class="border rounded-md px-[17px] py-[13px] hover:border-[#9B9EA3] focus:outline-[#3F8F6B]"
+                name=""
+                id=""
+                cols="60"
+                rows="7"
+                placeholder="¿En qué podemos ayudarte?"
+              ></textarea>
+            </div>
+
+            <div class="flex gap-3">
+              <input class="accent-Green-color" type="checkbox" />
+              <p class="text-sm font-normal leading-4">
+                Acepto la <a href="">Política de Privacidad</a> y los
+                <a href="">Términos y condiciones.</a>
+              </p>
+            </div>
+            <div class="">
+              <button
+                class="bg-Green-color rounded px-6 py-3 text-White-color text-sm font-semibold leading-4"
+              >
+                Enviar
+              </button>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------- FOOTER SECTION --------------------------------------------- -->
+
+    <section class="bg-Black-color text-White-color">
+      <article class="py-7 px-8 flex flex-col gap-4">
+        <figure class="">
+          <a href="index.html" class="flex gap-2 items-center"
+            ><h4 class="text-2xl font-normal leading-9">cafedealtura.com</h4>
+            <img
+              class="w-5 h-6"
+              src="../assets/icons/ps_coffee-hot.png"
+              alt="logo icon"
+          /></a>
+        </figure>
+
+        <div class="flex justify-between w-[1132px] h-[152px]">
+          <div class="flex flex-col gap-4">
+            <h3 class="text-lg font-semibold leading-6">Te ayudamos en</h3>
+            <a href="">
+              <button
+                class="flex gap-2 px-6 py-3 bg-Grey-color rounded items-center"
+              >
+                <img src="../assets/icons/Phone.svg" alt="phone icon" />
+                <p class="text-sm font-semibold leading-4">+34 919 49 05 18</p>
+              </button>
+            </a>
+
+            <a href="">
+              <button
+                class="flex gap-2 px-6 py-3 bg-Grey-color rounded items-center"
+              >
+                <img src="../assets/icons/Mail-white.svg" alt="mail icon" />
+                <p class="text-sm font-semibold leading-4">
+                  hola@cafedealtura.com
+                </p>
+              </button>
+            </a>
+          </div>
+
+          <ul
+            class="flex flex-col gap-4 text-sm font-semibold leading-4 ml-[120px]"
+          >
+            <li>
+              <a class="button-store" href="tienda.html">Tienda</a>
+            </li>
+
+            <li>
+              <a href="">Suscripción</a>
+            </li>
+
+            <li>
+              <a href="">Para empresas</a>
+            </li>
+
+            <li>
+              <a href="">Sobre nosotros</a>
+            </li>
+
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+
+          <ul class="flex flex-col gap-4 text-sm font-semibold leading-4">
+            <li>
+              <a href="">Política de privacidad</a>
+            </li>
+
+            <li>
+              <a href="">Política de cookies</a>
+            </li>
+
+            <li>
+              <a href="">Términos y condiciones</a>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <footer class="flex justify-center bg-Dark-grey-color py-3">
+        <p class="text-sm text-white font-semibold">
+          Todos los derechos reservados - Café de Altura SL - 2022
+        </p>
+      </footer>
+    </section>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>

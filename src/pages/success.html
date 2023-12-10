@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ------------------------------------------------- NAVBAR SECTION --------------------------------------------- -->
+    <header
+      class="bg-Dark-grey-color flex justify-center items-center py-3 px-10 h-16"
+    >
+      <nav
+        class="text-white flex justify-between w-full items-center font-semibold"
+      >
+        <figure class="flex items-center gap-2">
+          <a href="index.html"
+            ><h4 class="text-2xl font-normal">cafedealtura.com</h4></a
+          >
+          <img
+            class="w-5 h-6"
+            src="../assets/icons/ps_coffee-hot.png"
+            alt="logo icon"
+          />
+        </figure>
+
+        <ul
+          class="flex gap-4 [&>li]:px-2 [&>li]:py-2 [&>li]:rounded-xl [&>li>a]:text-sm"
+        >
+          <li class="hover:bg-[#f7f5f31a]">
+            <a class="" href="tienda.html"><button class="">Tienda</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Suscripción</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Para empresas</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Sobre nosotros</button></a>
+          </li>
+
+          <li class="hover:bg-[#f7f5f31a]">
+            <a href=""><button>Contacto</button></a>
+          </li>
+        </ul>
+
+        <div class="flex gap-6">
+          <a href="" class="flex items-center gap-2">
+            <img
+              class="w-6 h-6"
+              src="../assets/icons/Phone.svg"
+              alt="phone icon"
+            />
+            <p class="text-sm font-semibold">+34 919 49 05 18</p>
+          </a>
+
+          <a class="bg-Grey-color rounded text-sm font-semibold" href=""
+            ><button class="py-3 px-6">Iniciar sesión</button></a
+          >
+        </div>
+
+        <figure id="cart-bag" class="flex gap-2">
+          <a class="cart-bag-icon" href="cart.html"
+            ><img src="../assets/icons/cart-bag-icon.png" alt="cart icon"
+          /></a>
+          <p
+            class="cart-count text-xs font-normal leading-4 px-2 py-1 bg-Grey-color rounded-full hidden"
+          ></p>
+        </figure>
+      </nav>
+    </header>
+
+    <!-- ------------------------------------------------- SUCCESS TITLE --------------------------------------------------  -->
+
+    <section class="flex flex-col items-center p-10 gap-6">
+      <article class="flex flex-col items-center gap-6">
+        <figure class="">
+          <img
+            class="bg-Green-color p-3 rounded-[20px]"
+            src="../assets/icons/Clipboard check.svg"
+            alt=""
+          />
+        </figure>
+        <h3 class="text-2xl font-medium leading-7 text-Green-color">
+          Recibe tu pedido sin preocuparte
+        </h3>
+        <div class="success-content-title">
+          <p class="text-sm font-normal leading-4 w-[346px] text-center">
+            El pedido #12387 se encuentra en preparación. Lo recibirás dentro de
+            las fechas acordadas en tu envío. Hemos enviado un ticket a tu
+            correo electrónico.
+          </p>
+        </div>
+      </article>
+
+      <main class="flex flex-col p-6 gap-6 bg-Off-white-color w-[1200px]">
+        <h3 class="text-lg font-semibold leading-6">Tu pedido</h3>
+
+        <div id="products-container" class="flex flex-col gap-6"></div>
+
+        <img src="../assets/images/Divider.jpg" alt="" class="h-[1px]" />
+
+        <div class="flex justify-between">
+          <p class="text-sm font-normal leading-4">SUBTOTAL</p>
+          <p class="subtotal text-sm font-semibold leading-4"></p>
+        </div>
+
+        <div class="flex justify-between">
+          <p class="text-sm font-normal leading-4">ENVÍO</p>
+          <p class="delivery text-sm font-semibold leading-4"></p>
+        </div>
+        <img src="../assets/images/Divider.jpg" alt="" class="h-[1px]" />
+        <div class="flex justify-between">
+          <p class="text-sm font-semibold leading-4">TOTAL</p>
+          <div class="flex flex-col gap-2">
+            <p class="total-price text-sm font-semibold leading-4 self-end"></p>
+            <p class="text-xs font-normal leading-4">Incluye 3,78€ de IVA</p>
+          </div>
+        </div>
+      </main>
+
+      <a href="tienda.html"
+        ><button
+          id="finished"
+          class="px-6 py-3 bg-Green-color rounded text-White-color text-sm font-semibold leading-4"
+        >
+          Volver a la tienda
+        </button></a
+      >
+    </section>
+    <!-- --------------------------------------------------- FOOTER -------------------------------------------------------  -->
+    <footer class="flex justify-center bg-Dark-grey-color py-3">
+      <p class="text-sm text-white font-semibold">
+        Todos los derechos reservados - Café de Altura SL - 2022
+      </p>
+    </footer>
+    <script src="success.js"></script>
+  </body>
+</html>
